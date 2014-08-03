@@ -1,5 +1,7 @@
 # box-sprite-svg
 
+2d physics container for svg elements
+
 # example
 
 To drive an svg circle around, starting from this html:

@@ -1,0 +1,41 @@
+{
+  "name": "box-sprite-svg",
+  "version": "1.0.0",
+  "description": "2d physics container for svg elements",
+  "main": "index.js",
+  "dependencies": {
+    "inherits": "~2.0.1",
+    "svg-create-element": "~1.0.0"
+  },
+  "devDependencies": {
+    "frame-loop": "~1.0.0",
+    "keynames": "~0.0.0",
+    "tape": "^2.13.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/box-sprite-svg.git"
+  },
+  "homepage": "https://github.com/substack/box-sprite-svg",
+  "keywords": [
+    "svg",
+    "game",
+    "simulation",
+    "browser",
+    "dom",
+    "physics",
+    "velocity",
+    "acceleration",
+    "position",
+    "motion"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
