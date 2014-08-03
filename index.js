@@ -5,11 +5,19 @@ var createElement = require('svg-create-element');
 module.exports = Sprite;
 inherits(Sprite, EventEmitter);
 
-function Sprite (fn) {
-    if (!(this instanceof Sprite)) return new Sprite(fn);
+function Sprite (elem, fn) {
+    if (!(this instanceof Sprite)) return new Sprite(elem, fn);
     EventEmitter.call(this);
     
     this.element = createElement('g');
+    var pnode = elem.parentNode;
+    if (pnode) {
+        pnode.removeChild(elem);
+        this.element.appendChild(elem);
+        pnode.appendChild(this.element);
+    }
+    else this.element.appendChild(elem);
+    
     this.acceleration = { x: 0, y: 0 };
     this.velocity = { x: 0, y: 0 };
     this.position = { x: 0, y: 0 };
