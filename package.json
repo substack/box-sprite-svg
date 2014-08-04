@@ -1,6 +1,6 @@
 {
   "name": "box-sprite-svg",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "2d physics container for svg elements",
   "main": "index.js",
   "dependencies": {
