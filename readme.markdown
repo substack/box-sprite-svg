@@ -96,6 +96,14 @@ Append the current sprite element to a dom node or query selector string
 Call this method when you want the sprite to advance by `dt`, a time delta in
 milliseconds.
 
+## sp.reset()
+
+Set the motion properties all back to `(0,0)`, remove the element from its
+parent node, and unregister all listeners.
+
+This method is very handy for reusing sprites, which you'll probably want to do
+for performance reasons.
+
 # properties
 
 ## sp.acceleration = { x: 0, y: 0 }
