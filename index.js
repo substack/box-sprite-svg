@@ -52,6 +52,9 @@ Sprite.prototype.bbox = function () {
 };
 
 Sprite.prototype.reset = function () {
+    if (this.element.parentNode) {
+        this.element.parentNode.removeChild(this.element);
+    }
     this.removeAllListeners();
     this.acceleration = { x: 0, y: 0 };
     this.velocity = { x: 0, y: 0 };
