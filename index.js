@@ -50,3 +50,10 @@ Sprite.prototype.tick = function (dt) {
 Sprite.prototype.bbox = function () {
     return this.element.getBoundingClientRect();
 };
+
+Sprite.prototype.reset = function () {
+    this.removeAllListeners();
+    this.acceleration = { x: 0, y: 0 };
+    this.velocity = { x: 0, y: 0 };
+    this.position = { x: 0, y: 0 };
+};
