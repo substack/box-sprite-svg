@@ -52,6 +52,7 @@ Sprite.prototype.bbox = function () {
 };
 
 Sprite.prototype.reset = function () {
+    this.emit('reset');
     if (this.element.parentNode) {
         this.element.parentNode.removeChild(this.element);
     }

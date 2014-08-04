@@ -124,6 +124,10 @@ Coordinates as pixels
 
 Every time `.tick(dt)` is called with the time delta `dt`, this event fires.
 
+## sp.on('reset', function () {})
+
+When the `.reset()` method is called, this event fires.
+
 # install
 
 With [npm](https://npmjs.org) do:
